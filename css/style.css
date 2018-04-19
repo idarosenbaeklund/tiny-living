@@ -1,0 +1,302 @@
+/*GLOBAL*/
+
+footer {
+
+    position: absolute;
+    left: 0;  
+}
+
+
+
+h1,
+h2,
+p {
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    margin: 50px;
+
+}
+
+.container {
+    margin-top: 8%;
+}
+
+.cell {
+    margin: 16px;
+}
+
+
+footer img {
+    width: 10%;
+    height: 10%;
+    display: flex;
+
+
+}
+
+.flexbox1 {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.flexbox1 {
+    border: solid;
+    border-color: #cd9997;
+    background-color: #D3D3D3;
+    margin-top: 5%;
+
+}
+
+h1 {
+    text-align: center;
+    margin-top: 8%;
+}
+
+.plante {
+    width: 50%;
+    margin-left: 25%;
+}
+
+.infograpich {
+    width: 15%;
+}
+
+
+
+/*MENU*/
+
+img,
+header {
+    width: 100%;
+}
+
+.logo {
+    width: 50%;
+    margin-left: 25%;
+}
+
+.nav {
+    border-bottom: solid 15px;
+
+    border-color: #cd9997;
+    text-align: center;
+    height: 10px;
+    line-height: 6;
+
+
+}
+
+.menu a {
+    clear: right;
+    text-decoration: none;
+    color: black;
+    margin: 30px;
+    font-size: 25px;
+    line-height: 50px;
+    position: relative;
+}
+
+label {
+    margin: -8%;
+    margin-right: 2%;
+    font-size: 25px;
+    line-height: 0px;
+    display: none;
+    width: 26px;
+    float: right;
+}
+
+#toggle {
+    display: none;
+}
+
+/*MOBIL*/
+
+@media (max-width:780px) {
+    /*Menu*/
+    label {
+        display: block;
+        cursor: pointer;
+
+
+    }
+    .menu {
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
+
+    .menu a {
+        display: block;
+        margin: 0%;
+        margin-left: 0%;
+        border-bottom: 1px solid;
+        border-color: #cd9997;
+        background-color: whitesmoke;
+        font-size: 20px;
+        color: #cd9997;
+    }
+
+    #toggle:checked + .menu {
+        display: block;
+    }
+
+    /*Forside*/
+
+    .stilen,
+    .planter,
+    .shampoo,
+    .tips {
+        max-width: 100%;
+
+    }
+
+    cell img {
+        display: block;
+    }
+
+
+
+
+
+}
+
+/*TABLET*/
+
+@media (min-width:781px) {
+
+
+    .flexbox {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+    .cell {
+        width: 50%;
+
+    }
+
+    .cell {
+        width: calc(50% - 32px);
+    }
+
+    .container {
+        border: solid 30px;
+        border-color: #cd9997;
+
+
+    }
+
+
+
+    /*STJÆL STILEN ARTIKEL*/
+    .alternativer {
+        width: calc(70% - 25%);
+    }
+
+
+    /*PLANTE ARTIKEL*/
+    .monstrea,
+    .violinfigen,
+    .pilea {
+        width: 50%;
+    }
+
+    .infographic {
+        width: calc(70% - 25%);
+    }
+
+
+
+}
+
+/*COMPUTER*/
+
+@media (min-width:1025px) {
+
+    body {
+        margin: 10%;
+    }
+    p,
+    h2 {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+
+    .cell {
+        width: 50%;
+    }
+    .cell {
+        width: calc(70% - 25%);
+    }
+
+
+    /*STJÆL STILEN ARTIKEL*/
+    .alternativer {
+        width: 50%;
+    }
+
+    .alternativer {
+        width: calc(70% - 25%);
+    }
+
+
+    /*PLANTE ARTIKEL*/
+    .monstrea,
+    .violinfigen,
+    .pilea {
+        width: 30%;
+    }
+
+    .infographic {
+        width: calc(70% - 25%);
+    }
+    .monstrea,
+    .violinfigen,
+    .pilea {
+        margin-left: 10%;
+    }
+
+    .infographic {
+        margin-left: 10%;
+    }
+
+
+    /*HOVER EFFEKT PÅ BILLEDERNE*/
+    .stilen:hover {
+        opacity: 0.5;
+        filter: alpha(opacity=50);
+    }
+
+    .planter:hover {
+        opacity: 0.5;
+        filter: alpha(opacity=50);
+    }
+    .shampoo:hover {
+        opacity: 0.5;
+        filter: alpha(opacity=50);
+    }
+    .tips:hover {
+        opacity: 0.5;
+        filter: alpha(opacity=50);
+    }
+
+
+
+    .container {
+        border: solid 30px;
+        border-color: #cd9997;
+
+
+        background: #e5c397;
+
+    }
+
+}
